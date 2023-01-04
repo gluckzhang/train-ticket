@@ -1386,7 +1386,8 @@ spec:
     spec:
       containers:
       - name: ts-verification-code-service
-        image: codewisdom/ts-verification-code-service-with-jaeger:v1
+        # image: codewisdom/ts-verification-code-service-with-jaeger:v1
+        image: gluckzhang/ts-verification-code-service-with-jaeger:hacked
         imagePullPolicy: Always
         ports:
         - containerPort: 15678
