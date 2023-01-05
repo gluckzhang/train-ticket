@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-user-mongo
+  labels:
+    app: ts-user-mongo
+    app.kubernetes.io/name: ts-user-mongo
 spec:
   selector:
     matchLabels:
@@ -11,6 +14,7 @@ spec:
     metadata:
       labels:
         app: ts-user-mongo
+        app.kubernetes.io/name: ts-user-mongo
     spec:
       containers:
       - name: ts-user-mongo
@@ -28,6 +32,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-auth-mongo
+  labels:
+    app: ts-auth-mongo
+    app.kubernetes.io/name: ts-auth-mongo
 spec:
   selector:
     matchLabels:
@@ -37,6 +44,7 @@ spec:
     metadata:
       labels:
         app: ts-auth-mongo
+        app.kubernetes.io/name: ts-auth-mongo
     spec:
       containers:
       - name: ts-auth-mongo
@@ -54,6 +62,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-route-mongo
+  labels:
+    app: ts-route-mongo
+    app.kubernetes.io/name: ts-route-mongo
 spec:
   selector:
     matchLabels:
@@ -63,6 +74,7 @@ spec:
     metadata:
       labels:
         app: ts-route-mongo
+        app.kubernetes.io/name: ts-route-mongo
     spec:
       containers:
       - name: ts-route-mongo
@@ -81,6 +93,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-contacts-mongo
+  labels:
+    app: ts-contacts-mongo
+    app.kubernetes.io/name: ts-contacts-mongo
 spec:
   selector:
     matchLabels:
@@ -90,6 +105,7 @@ spec:
     metadata:
       labels:
         app: ts-contacts-mongo
+        app.kubernetes.io/name: ts-contacts-mongo
     spec:
       containers:
       - name: ts-contacts-mongo
@@ -108,6 +124,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-order-mongo
+  labels:
+    app: ts-order-mongo
+    app.kubernetes.io/name: ts-order-mongo
 spec:
   selector:
     matchLabels:
@@ -117,6 +136,7 @@ spec:
     metadata:
       labels:
         app: ts-order-mongo
+        app.kubernetes.io/name: ts-order-mongo
     spec:
       containers:
       - name: ts-order-mongo
@@ -135,6 +155,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-order-other-mongo
+  labels:
+    app: ts-order-other-mongo
+    app.kubernetes.io/name: ts-order-other-mongo
 spec:
   selector:
     matchLabels:
@@ -144,6 +167,7 @@ spec:
     metadata:
       labels:
         app: ts-order-other-mongo
+        app.kubernetes.io/name: ts-order-other-mongo
     spec:
       containers:
       - name: ts-order-other-mongo
@@ -162,6 +186,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-config-mongo
+  labels:
+    app: ts-config-mongo
+    app.kubernetes.io/name: ts-config-mongo
 spec:
   selector:
     matchLabels:
@@ -171,6 +198,7 @@ spec:
     metadata:
       labels:
         app: ts-config-mongo
+        app.kubernetes.io/name: ts-config-mongo
     spec:
       containers:
       - name: ts-config-mongo
@@ -189,6 +217,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-station-mongo
+  labels:
+    app: ts-station-mongo
+    app.kubernetes.io/name: ts-station-mongo
 spec:
   selector:
     matchLabels:
@@ -198,6 +229,7 @@ spec:
     metadata:
       labels:
         app: ts-station-mongo
+        app.kubernetes.io/name: ts-station-mongo
     spec:
       containers:
       - name: ts-station-mongo
@@ -216,6 +248,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-train-mongo
+  labels:
+    app: ts-train-mongo
+    app.kubernetes.io/name: ts-train-mongo
 spec:
   selector:
     matchLabels:
@@ -225,6 +260,7 @@ spec:
     metadata:
       labels:
         app: ts-train-mongo
+        app.kubernetes.io/name: ts-train-mongo
     spec:
       containers:
       - name: ts-train-mongo
@@ -243,6 +279,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-travel-mongo
+  labels:
+    app: ts-travel-mongo
+    app.kubernetes.io/name: ts-travel-mongo
 spec:
   selector:
     matchLabels:
@@ -252,6 +291,7 @@ spec:
     metadata:
       labels:
         app: ts-travel-mongo
+        app.kubernetes.io/name: ts-travel-mongo
     spec:
       containers:
       - name: ts-travel-mongo
@@ -270,6 +310,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-travel2-mongo
+  labels:
+    app: ts-travel2-mongo
+    app.kubernetes.io/name: ts-travel2-mongo
 spec:
   selector:
     matchLabels:
@@ -279,6 +322,7 @@ spec:
     metadata:
       labels:
         app: ts-travel2-mongo
+        app.kubernetes.io/name: ts-travel2-mongo
     spec:
       containers:
       - name: ts-travel2-mongo
@@ -297,6 +341,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-price-mongo
+  labels:
+    app: ts-price-mongo
+    app.kubernetes.io/name: ts-price-mongo
 spec:
   selector:
     matchLabels:
@@ -306,6 +353,7 @@ spec:
     metadata:
       labels:
         app: ts-price-mongo
+        app.kubernetes.io/name: ts-price-mongo
     spec:
       containers:
       - name: ts-price-mongo
@@ -324,6 +372,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-security-mongo
+  labels:
+    app: ts-security-mongo
+    app.kubernetes.io/name: ts-security-mongo
 spec:
   selector:
     matchLabels:
@@ -333,6 +384,7 @@ spec:
     metadata:
       labels:
         app: ts-security-mongo
+        app.kubernetes.io/name: ts-security-mongo
     spec:
       containers:
       - name: ts-security-mongo
@@ -351,6 +403,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-inside-payment-mongo
+  labels:
+    app: ts-inside-payment-mongo
+    app.kubernetes.io/name: ts-inside-payment-mongo
 spec:
   selector:
     matchLabels:
@@ -360,6 +415,7 @@ spec:
     metadata:
       labels:
         app: ts-inside-payment-mongo
+        app.kubernetes.io/name: ts-inside-payment-mongo
     spec:
       containers:
       - name: ts-inside-payment-mongo
@@ -378,6 +434,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-payment-mongo
+  labels:
+    app: ts-payment-mongo
+    app.kubernetes.io/name: ts-payment-mongo
 spec:
   selector:
     matchLabels:
@@ -387,6 +446,7 @@ spec:
     metadata:
       labels:
         app: ts-payment-mongo
+        app.kubernetes.io/name: ts-payment-mongo
     spec:
       containers:
       - name: ts-payment-mongo
@@ -405,6 +465,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-assurance-mongo
+  labels:
+    app: ts-assurance-mongo
+    app.kubernetes.io/name: ts-assurance-mongo
 spec:
   selector:
     matchLabels:
@@ -414,6 +477,7 @@ spec:
     metadata:
       labels:
         app: ts-assurance-mongo
+        app.kubernetes.io/name: ts-assurance-mongo
     spec:
       containers:
       - name: ts-assurance-mongo
@@ -432,6 +496,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-ticket-office-mongo
+  labels:
+    app: ts-ticket-office-mongo
+    app.kubernetes.io/name: ts-ticket-office-mongo
 spec:
   selector:
     matchLabels:
@@ -441,6 +508,7 @@ spec:
     metadata:
       labels:
         app: ts-ticket-office-mongo
+        app.kubernetes.io/name: ts-ticket-office-mongo
     spec:
       containers:
       - name: ts-ticket-office-mongo
@@ -460,6 +528,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-voucher-mysql
+  labels:
+    app: ts-voucher-mysql
+    app.kubernetes.io/name: ts-voucher-mysql
 spec:
   selector:
     matchLabels:
@@ -469,6 +540,7 @@ spec:
     metadata:
       labels:
         app: ts-voucher-mysql
+        app.kubernetes.io/name: ts-voucher-mysql
     spec:
       containers:
       - name: ts-voucher-mysql
@@ -492,6 +564,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-food-map-mongo
+  labels:
+    app: ts-food-map-mongo
+    app.kubernetes.io/name: ts-food-map-mongo
 spec:
   selector:
     matchLabels:
@@ -501,6 +576,7 @@ spec:
     metadata:
       labels:
         app: ts-food-map-mongo
+        app.kubernetes.io/name: ts-food-map-mongo
     spec:
       containers:
       - name: ts-food-map-mongo
@@ -519,6 +595,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-consign-mongo
+  labels:
+    app: ts-consign-mongo
+    app.kubernetes.io/name: ts-consign-mongo
 spec:
   selector:
     matchLabels:
@@ -528,6 +607,7 @@ spec:
     metadata:
       labels:
         app: ts-consign-mongo
+        app.kubernetes.io/name: ts-consign-mongo
     spec:
       containers:
       - name: ts-consign-mongo
@@ -546,6 +626,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-consign-price-mongo
+  labels:
+    app: ts-consign-price-mongo
+    app.kubernetes.io/name: ts-consign-price-mongo
 spec:
   selector:
     matchLabels:
@@ -555,6 +638,7 @@ spec:
     metadata:
       labels:
         app: ts-consign-price-mongo
+        app.kubernetes.io/name: ts-consign-price-mongo
     spec:
       containers:
       - name: ts-consign-price-mongo
@@ -573,6 +657,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-food-mongo
+  labels:
+    app: ts-food-mongo
+    app.kubernetes.io/name: ts-food-mongo
 spec:
   selector:
     matchLabels:
@@ -582,6 +669,7 @@ spec:
     metadata:
       labels:
         app: ts-food-mongo
+        app.kubernetes.io/name: ts-food-mongo
     spec:
       containers:
       - name: ts-food-mongo
@@ -598,18 +686,24 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: ts-user-mongo 
+  name: ts-user-mongo
+  labels:
+    app: ts-user-mongo
+    app.kubernetes.io/name: ts-user-mongo
 spec:
   ports:
     - port: 27017
   selector:
-   app: ts-user-mongo 
+   app: ts-user-mongo
 
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: ts-auth-mongo
+  labels:
+    app: ts-auth-mongo
+    app.kubernetes.io/name: ts-auth-mongo
 spec:
   ports:
     - port: 27017
@@ -621,6 +715,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-route-mongo
+  labels:
+    app: ts-route-mongo
+    app.kubernetes.io/name: ts-route-mongo
 spec:
   ports:
     - port: 27017
@@ -633,6 +730,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-contacts-mongo
+  labels:
+    app: ts-contacts-mongo
+    app.kubernetes.io/name: ts-contacts-mongo
 spec:
   ports:
     - port: 27017
@@ -645,6 +745,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-order-mongo
+  labels:
+    app: ts-order-mongo
+    app.kubernetes.io/name: ts-order-mongo
 spec:
   ports:
     - port: 27017
@@ -657,6 +760,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-order-other-mongo
+  labels:
+    app: ts-order-other-mongo
+    app.kubernetes.io/name: ts-order-other-mongo
 spec:
   ports:
     - port: 27017
@@ -669,6 +775,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-config-mongo
+  labels:
+    app: ts-config-mongo
+    app.kubernetes.io/name: ts-config-mongo
 spec:
   ports:
     - port: 27017
@@ -681,6 +790,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-station-mongo
+  labels:
+    app: ts-station-mongo
+    app.kubernetes.io/name: ts-station-mongo
 spec:
   ports:
     - port: 27017
@@ -693,6 +805,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-train-mongo
+  labels:
+    app: ts-train-mongo
+    app.kubernetes.io/name: ts-train-mongo
 spec:
   ports:
     - port: 27017
@@ -705,6 +820,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-travel-mongo
+  labels:
+    app: ts-travel-mongo
+    app.kubernetes.io/name: ts-travel-mongo
 spec:
   ports:
     - port: 27017
@@ -717,6 +835,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-travel2-mongo
+  labels:
+    app: ts-travel2-mongo
+    app.kubernetes.io/name: ts-travel2-mongo
 spec:
   ports:
     - port: 27017
@@ -729,6 +850,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-price-mongo
+  labels:
+    app: ts-price-mongo
+    app.kubernetes.io/name: ts-price-mongo
 spec:
   ports:
     - port: 27017
@@ -741,6 +865,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-security-mongo
+  labels:
+    app: ts-security-mongo
+    app.kubernetes.io/name: ts-security-mongo
 spec:
   ports:
     - port: 27017
@@ -753,6 +880,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-inside-payment-mongo
+  labels:
+    app: ts-inside-payment-mongo
+    app.kubernetes.io/name: ts-inside-payment-mongo
 spec:
   ports:
     - port: 27017
@@ -765,6 +895,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-payment-mongo
+  labels:
+    app: ts-payment-mongo
+    app.kubernetes.io/name: ts-payment-mongo
 spec:
   ports:
     - port: 27017
@@ -777,6 +910,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-assurance-mongo
+  labels:
+    app: ts-assurance-mongo
+    app.kubernetes.io/name: ts-assurance-mongo
 spec:
   ports:
     - port: 27017
@@ -789,6 +925,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-ticket-office-mongo
+  labels:
+    app: ts-ticket-office-mongo
+    app.kubernetes.io/name: ts-ticket-office-mongo
 spec:
   ports:
     - port: 27017
@@ -801,6 +940,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-voucher-mysql
+  labels:
+    app: ts-voucher-mysql
+    app.kubernetes.io/name: ts-voucher-mysql
 spec:
   ports:
     - port: 3306
@@ -813,6 +955,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-food-map-mongo
+  labels:
+    app: ts-food-map-mongo
+    app.kubernetes.io/name: ts-food-map-mongo
 spec:
   ports:
     - port: 27017
@@ -825,6 +970,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-consign-mongo
+  labels:
+    app: ts-consign-mongo
+    app.kubernetes.io/name: ts-consign-mongo
 spec:
   ports:
     - port: 27017
@@ -837,6 +985,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-consign-price-mongo
+  labels:
+    app: ts-consign-price-mongo
+    app.kubernetes.io/name: ts-consign-price-mongo
 spec:
   ports:
     - port: 27017
@@ -849,6 +1000,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-food-mongo
+  labels:
+    app: ts-food-mongo
+    app.kubernetes.io/name: ts-food-mongo
 spec:
   ports:
     - port: 27017
@@ -862,6 +1016,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jaeger
+  labels:
+    app: jaeger
+    app.kubernetes.io/name: jaeger
   labels:
     app: jaeger
     app.kubernetes.io/name: jaeger
@@ -915,6 +1072,9 @@ kind: Service
 metadata:
   name: jaeger-query
   labels:
+    app: jaeger-query
+    app.kubernetes.io/name: jaeger-query
+  labels:
     app: jaeger
     app.kubernetes.io/name: jaeger
     app.kubernetes.io/component: query
@@ -935,6 +1095,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: jaeger-collector
+  labels:
+    app: jaeger-collector
+    app.kubernetes.io/name: jaeger-collector
   labels:
     app: jaeger
     app.kubernetes.io/name: jaeger
@@ -964,6 +1127,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: jaeger
+  labels:
+    app: jaeger
+    app.kubernetes.io/name: jaeger
   labels:
     app: jaeger
     app.kubernetes.io/name: jaeger
@@ -997,6 +1163,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: zipkin
+  labels:
+    app: zipkin
+    app.kubernetes.io/name: zipkin
   labels:
     app: jaeger
     app.kubernetes.io/name: jaeger

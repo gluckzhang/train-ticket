@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-ui-dashboard
+  labels:
+    app: ts-ui-dashboard
+    app.kubernetes.io/name: ts-ui-dashboard
 spec:
   selector:
     matchLabels:
@@ -11,10 +14,11 @@ spec:
     metadata:
       labels:
         app: ts-ui-dashboard
+        app.kubernetes.io/name: ts-ui-dashboard
     spec:
       containers:
       - name: ts-ui-dashboard
-        image: codewisdom/ts-ui-dashboard:0.0.4
+        image: codewisdom/ts-ui-dashboard-with-jaeger:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
@@ -32,6 +36,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-ui-dashboard
+  labels:
+    app: ts-ui-dashboard
+    app.kubernetes.io/name: ts-ui-dashboard
 spec:
   type: NodePort
   ports:
